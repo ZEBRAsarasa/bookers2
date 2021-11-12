@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>User info</h2>
+      <%= attachment_image_tag @user, :image, :fill, 63, 63, format: 'jpg' %>
+      <table>
+        <tbody>
+          <% @users.each do |user| %>
+          <tr>
+            <th>name</th>
+            <th><%= user.name %></th>
+          </tr>
+          <tr>
+            <th>introduction</th>
+            <th><%= user.introduction %></th>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <div class="row">
+        <%= link_to "", edit_user_path(@users.id), class: "btn btn-out-line-secondary btn-block fas fa-user-cog" %>
+      </div>
+    </div>
+  </div>
+</div>

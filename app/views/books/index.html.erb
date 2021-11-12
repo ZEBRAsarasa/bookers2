@@ -1,0 +1,21 @@
+<div>
+  <div>
+    <div>
+      <h2>User info</h2>
+      <%= attachment_image_tag @book :fill, 63, 63, format: 'jpg' %>
+      <table>
+        <tbody>
+          <% @books.each do |book| %>
+          <tr>
+            <th>name</th>
+            <th><%= book.name %></th>
+          </tr>
+          <tr>
+            <th>introduction</th>
+            <th><%= book.introduction %></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
