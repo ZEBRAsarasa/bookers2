@@ -6,6 +6,6 @@ get 'home/about' => 'homes#about'
 
 resources :books, only: [:create, :index, :show, :edit, :update, :destroy]
 
-resources :users, only: [:new, :create, :show, :index, :edit, :update]
+resources :users, only: [:show, :index, :edit, :update]
 
 end
