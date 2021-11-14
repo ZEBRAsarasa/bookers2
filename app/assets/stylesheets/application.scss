@@ -27,8 +27,16 @@ div.field, div.actions {
     line-height: normal;
 }
 
-.table {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
+#notice {
+    color: green;
+}
+
+#error_explanation {
+    color: red;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
 }
